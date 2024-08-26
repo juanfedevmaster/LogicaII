@@ -12,3 +12,5 @@ def incremento_variables():
 
     print(f"i:{i},j:{j},k:{k}")
 
+
+incremento_variables()

@@ -8,3 +8,5 @@ def ciclo_logaritmico():
 
     print(f"n:{n}, k:{k}")  # O(1)
 
+
+ciclo_logaritmico()
