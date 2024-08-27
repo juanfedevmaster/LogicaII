@@ -34,19 +34,19 @@ class ColaNoCircular:
             print(Vector)
 
 
-cola = ColaNoCircular(7)
-
-cola.encolar_no_circular(1)
-cola.encolar_no_circular(2)
-cola.encolar_no_circular(3)
-cola.encolar_no_circular(4)
-cola.encolar_no_circular(5)
-cola.encolar_no_circular(6)
-cola.encolar_no_circular(7)
-cola.encolar_no_circular(8)
-
-cola.imprimir_no_circular()
-cola.desencolar_no_circular()
-cola.desencolar_no_circular()
-cola.desencolar_no_circular()
-cola.imprimir_no_circular()
+# cola = ColaNoCircular(7)
+#
+# cola.encolar_no_circular(1)
+# cola.encolar_no_circular(2)
+# cola.encolar_no_circular(3)
+# cola.encolar_no_circular(4)
+# cola.encolar_no_circular(5)
+# cola.encolar_no_circular(6)
+# cola.encolar_no_circular(7)
+# cola.encolar_no_circular(8)
+#
+# cola.imprimir_no_circular()
+# cola.desencolar_no_circular()
+# cola.desencolar_no_circular()
+# cola.desencolar_no_circular()
+# cola.imprimir_no_circular()

@@ -40,21 +40,20 @@ class Pila:
 
         return valor_eliminar
 
+# pila = Pila(10)
+# pila.apilar(1)
+# pila.apilar(2)
+# pila.apilar(3)
+# pila.apilar(4)
+# pila.apilar(5)
+# pila.apilar(6)
+# pila.apilar(7)
+# pila.apilar(8)
+# pila.apilar(9)
+# pila.apilar(10)
 
-pila = Pila(10)
-pila.apilar(1)
-pila.apilar(2)
-pila.apilar(3)
-pila.apilar(4)
-pila.apilar(5)
-pila.apilar(6)
-pila.apilar(7)
-pila.apilar(8)
-pila.apilar(9)
-pila.apilar(10)
+# print(f"Desapilando: {pila.desapilar()}")
+# print(f"Desapilando: {pila.desapilar()}")
+# print(f"Desapilando: {pila.desapilar()}")
 
-print(f"Desapilando: {pila.desapilar()}")
-print(f"Desapilando: {pila.desapilar()}")
-print(f"Desapilando: {pila.desapilar()}")
-
-print(pila.V)
+# print(pila.V)
