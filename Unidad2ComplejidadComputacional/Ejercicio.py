@@ -7,7 +7,7 @@
 def eliminar_duplicados(array):
     result = []
     for i in range(0, len(array)):
-        duplicate = False
+        duplicate = False # O(n)
         for j in range(i + 1, len(array)):
             if array[i] == array[j]:
                 duplicate = True
@@ -21,15 +21,15 @@ def eliminar_duplicados(array):
 
 def eliminar_duplicados_optimizado(array2):
     result2 = set()
-    for item in array2:
-        if (item in result2) is False:
-            result2.add(item)
-    return result2
+    for item in array2: # O(n)
+        if (item in result2) is False: # O(n)
+            result2.add(item) # O(n)
+    return result2 # O(1)
 
 
 array = [1, 2, 3, 3, 4, 5, 8, 7, 9, 12, 10, 10, 14, 25, 4, 58]
 print(array)
 result = eliminar_duplicados(array)
 print(result)
-result2 = eliminar_duplicados_optimizado(array)
-print(result2)
+# result2 = eliminar_duplicados_optimizado(array)
+# print(result2)

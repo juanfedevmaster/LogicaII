@@ -1,11 +1,11 @@
 class Pila:
     def __init__(self, tam):
         self.V = []
-        self.cima = 0
+        self.cima = -1
         self.tam = tam
 
     def pila_vacia(self):
-        if self.cima == 0:
+        if self.cima < 0:
             return True
         else:
             return False
@@ -33,17 +33,17 @@ class Pila:
         if self.pila_vacia() is True:
             print("La pila esta Vacia")
             return None
-
-        self.cima = self.cima - 1
         valor_eliminar = self.V[self.cima]
         self.V.pop(self.cima)
+        self.cima = self.cima - 1
 
         return valor_eliminar
 
-# pila = Pila(10)
-# pila.apilar(1)
-# pila.apilar(2)
-# pila.apilar(3)
+
+pila = Pila(10)
+pila.apilar(1)
+pila.apilar(2)
+pila.apilar(3)
 # pila.apilar(4)
 # pila.apilar(5)
 # pila.apilar(6)
@@ -51,9 +51,13 @@ class Pila:
 # pila.apilar(8)
 # pila.apilar(9)
 # pila.apilar(10)
-
-# print(f"Desapilando: {pila.desapilar()}")
-# print(f"Desapilando: {pila.desapilar()}")
-# print(f"Desapilando: {pila.desapilar()}")
+print(pila.V)
+print(f"Desapilando: {pila.desapilar()}")
+print(pila.V)
+print(f"Desapilando: {pila.desapilar()}")
+print(pila.V)
+print(f"Desapilando: {pila.desapilar()}")
+print(pila.V)
+print(f"Desapilando: {pila.desapilar()}")
 
 # print(pila.V)

@@ -1,16 +1,17 @@
 class Pila:
-    def __init__(self):
+    def __init__(self, tam):
         self.V = []
-        self.cima = 0
+        self.cima = -1
+        self.tam = tam
 
     def pila_vacia(self):
-        if self.cima == 0:
+        if self.cima < 0:
             return True
         else:
             return False
 
     def pila_llena(self):
-        if self.cima == len(self.V) - 1:
+        if self.cima == self.tam - 1:
             return True
         else:
             return False
@@ -33,10 +34,8 @@ class Pila:
             print("La pila esta Vacia")
             return None
 
+        valor_eliminar = self.V.pop(self.cima)
         self.cima = self.cima - 1
-        valor_eliminar = self.V[self.cima]
-        self.V.pop(self.cima)
-
         return valor_eliminar
 
     def expresion_balanceada(self, expresion):
@@ -56,9 +55,14 @@ expression2 = "(5 + 3 * (2 + 4)"
 expression3 = "((5 + 3) * 2) + 4)"
 expression4 = "((5 + 3) * (2 + 4))"
 
-pila = Pila()
-
+pila = Pila(len(expression1))
 print(f"'{expression1}' está balanceada: {pila.expresion_balanceada(expression1)}")
+
+pila = Pila(len(expression2))
 print(f"'{expression2}' está balanceada: {pila.expresion_balanceada(expression2)}")
+
+pila = Pila(len(expression3))
 print(f"'{expression3}' está balanceada: {pila.expresion_balanceada(expression3)}")
+
+pila = Pila(len(expression4))
 print(f"'{expression4}' está balanceada: {pila.expresion_balanceada(expression4)}")
